@@ -16,6 +16,6 @@ class ApiController extends Controller
     }
     public function sectionAction()
     {
-    return view('section');
+        return view('section');
     }
 }

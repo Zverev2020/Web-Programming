@@ -10,7 +10,7 @@
 <div class="header">
     <div class="container">
 
-        <a href="index.html" id="logo">MasterComp</a>
+        <a href="/index" id="logo">MasterComp</a>
 
         <div class="nav">
             <a class="nav_link" href="/index">Main</a>

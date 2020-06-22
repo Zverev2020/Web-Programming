@@ -1,130 +1,60 @@
-<!DOCTYPE html>
-<html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>МастерКомп</title>
-    <link rel="stylesheet"  href="style.css">
-</head>
-<body>
-<div class="header">
-    <div class="container">
+<?php
 
-        <a href="index.html" id="logo">MasterComp</a>
+/**
+ * Laravel - A PHP Framework For Web Artisans
+ *
+ * @package  Laravel
+ * @author   Taylor Otwell <taylor@laravel.com>
+ */
 
-        <div class="nav">
-            <a class="nav_link" href="/index">Main</a>
-            <a class="nav_link" href="/section">Products</a>
-            <a class="nav_link" href="/contact">Contact</a>
-        </div>
-    </div>
-    <div class="contact_section">
-        <h2 class="contact_p">Welcome To MasterComp Contact</h2>
-        <div class="d1">
-            <form>
-                <input type="text" placeholder="Искать здесь...">
-                <button type="submit"></button>
-            </form>
-        </div>
-    </div>
-    <div class="section">
-        <div class="Responsive">
-            <img class="icon" src="tower-pc.png">
-            <p class="icon_name">Computer</p>
-        </div>
+define('LARAVEL_START', microtime(true));
 
-        <div class="Commerce">
-            <img class="icon" src="laptop.png">
-            <p class="icon_name" id="commerce">Laptop</p>
-        </div>
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| our application. We just need to utilize it! We'll simply require it
+| into the script here so that we don't have to worry about manual
+| loading any of our classes later on. It feels great to relax.
+|
+*/
 
-        <div class="Blog">
-            <img class="icon" src="print.png">
-            <p class="icon_name">Printer</p>
-        </div>
+require __DIR__.'/../vendor/autoload.php';
 
-        <div class="Based">
-            <img class="icon2" src="telephone.png">
-            <p class="icon_name">Smartphone</p>
-        </div>
-    </div>
+/*
+|--------------------------------------------------------------------------
+| Turn On The Lights
+|--------------------------------------------------------------------------
+|
+| We need to illuminate PHP development, so let us turn on the lights.
+| This bootstraps the framework and gets it ready for use, then it
+| will load up this application so that we can run it and send
+| the responses back to the browser and delight our users.
+|
+*/
 
-    <div class="border"></div>
+$app = require_once __DIR__.'/../bootstrap/app.php';
 
-    <div class="section2_width">
-        <div class="section2">
-            <img src="image_notebook_03.jpg">
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request
+| through the kernel, and send the associated response back to
+| the client's browser allowing them to enjoy the creative
+| and wonderful application we have prepared for them.
+|
+*/
 
-            <div class="main_text_section2" >
-                <p id="text_section2">Service center of MasterKomp </p>
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
-                <p>The service center of MasterKomp company carries out laptop repair in service centers of the Irkutsk region in the cities of Irkutsk, Usolye-Sibirskoye, Angarsk. Our company accepts laptops for repair with any malfunctions that need to be repaired, such as: Replacing the laptop keyboard completely
-                    Keyboard repair and touchpad replacement
-                    Keyboard cleaning and fluid recovery
-                    Matrix replacement for models of different diagonals matte and glossy
-                    Power and charging system repair
-                    Repair and replacement of housing parts
-                    Cleaning and repairing the cooling fan
-                    Repair inverter and backlight
-                    Dust cleaning of all internal mechanisms
-                    Thermal Paste Replacement</p>
-            </div>
-        </div>
-    </div>
+$response = $kernel->handle(
+    $request = Illuminate\Http\Request::capture()
+);
 
-    <div class="section3">
-        <div class="Responsive">
-            <img class="icon" src="at.png">
-            <p class="icon_name">Complex</p>
-        </div>
+$response->send();
 
-        <div class="Commerce">
-            <img class="icon3" src="500_F_190430244_5G4bnqU288lNv4YyjagcXLgg8uMB4zo0.png">
-            <p class="icon_name" id="commerce">Laptop</p>
-        </div>
-
-        <div class="Blog">
-            <img class="icon" src="graphic.png">
-            <p class="icon_name">Printer</p>
-        </div>
-
-        <div class="Based">
-            <img class="icon4" src="favorite.png">
-            <p class="icon_name">Smartphone</p>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer_size">
-            <div class="About_Us">
-                <p class="footer_about">About Us</p>
-                <a class="footer_about_mode" href="#">About Us<br></a>
-                <a class="footer_about_mode" href="#">Why Us<br></a>
-                <a class="footer_about_mode" href="#">Customer Stories<br></a>
-                <a class="footer_about_mode" href="#">Press Resources<br></a>
-                <a class="footer_about_mode" href="#">Press Releases<br></a>
-                <a class="footer_about_mode" href="#">Contact us</a>
-            </div>
-
-            <div class="About_Us2">
-                <p class="footer_about">About Us</p>
-                <a class="footer_about_mode" href="#">About Us<br></a>
-                <a class="footer_about_mode" href="#">Why Us<br></a>
-                <a class="footer_about_mode" href="#">Customer Stories<br></a>
-                <a class="footer_about_mode" href="#">Press Resources<br></a>
-                <a class="footer_about_mode" href="#">Press Releases<br></a>
-                <a class="footer_about_mode" href="#">Contact us</a>
-            </div>
-
-            <div class="testimoanials">
-                <p class="footer_testimoanials">Service center of MasterKomp</p>
-
-                <p class="footer_testimoanials_text">The service center of MasterKomp company carries out laptop repair in service centers of the Irkutsk region in the cities of Irkutsk, Usolye-Sibirskoye, Angarsk. Our company accepts laptops for repair with any malfunctions that need to be repaired</p>
-
-                <a href="#" class="footer_lorem">ИП Черных.</a><br>
-                <a href="#" class="footer_lorem">@2020</a>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+$kernel->terminate($request, $response);
