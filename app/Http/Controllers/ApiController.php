@@ -10,12 +10,21 @@ class ApiController extends Controller
     {
         return view('index');
     }
+
     public function contactAction()
     {
         return view('contact');
     }
+
     public function sectionAction()
     {
-        return view('section');
+        return view('section', ['section' => (new ArticleController())->show()]);
     }
+
+    public function reg()
+    {
+        return view('reg');
+    }
+
+
 }

@@ -1,121 +1,25 @@
 @extends('layouts.header')
 @section('title')
-    <title>Products</title>
+    <title>Products and news</title>
 @endsection()
 @section('content')
 
+
     <div class="section_size">
-        <div class="productcard">
-            <img class="image_product" src="product1.png">
-            <div class="text_product">
-                <p class="text_product_setting">
-                    Заправка Картриджей(285,2612,samsung)
-                </p>
-
-                <p class="about_us_product">
-                    350 р.
-                </p>
-            </div>
-            <a class="button_product" href="#">КУПИТЬ</a>
-        </div>
-
-        <div class="productcard">
-            <img class="image_product" src="product2.png">
-            <div class="text_product">
-                <p class="text_product_setting">
-                    Ремонт, обслуживание ПК, ноутбуков и иных устройств
-                </p>
-
-                <p class="about_us_product">
-                    от 500р
-                </p>
-            </div>
-            <a class="button_product" href="#">КУПИТЬ</a>
-        </div>
-
-        <div class="productcard">
-            <img class="image_product" src="product3.png">
-            <div class="text_product">
-                <p class="text_product_setting">
-                    GIGABYTE nVidia GeForce GTX 1650
-                </p>
-
-                <p class="about_us_product">
-                    12240 руб.
-                </p>
-            </div>
-            <a class="button_product" href="#">КУПИТЬ</a>
-        </div>
-
-        <div class="productcard">
-            <img class="image_product" src="product4.png">
-            <div class="text_product">
-                <p class="text_product_setting">
-                    Жесткий диск Toshiba 1 TB
-                </p>
-
-                <p class="about_us_product">
-                    5000 руб.
-                </p>
-            </div>
-            <a class="button_product" href="#">КУПИТЬ</a>
-        </div>
 
 
-        <div class="productcard">
-            <img class="image_product" src="product5.png">
-            <div class="text_product">
-                <p class="text_product_setting">
-                    Xiaomi mi band 4
-                </p>
 
-                <p class="about_us_product">
-                    2000 руб
-                </p>
-            </div>
-            <a class="button_product" href="#">КУПИТЬ</a>
-        </div>
+             @foreach($section as $section)
+                    <div class="productcard">
 
-        <div class="productcard">
-            <img class="image_product" src="product6.jpg">
-            <div class="text_product">
-                <p class="text_product_setting">
-                    Дисплей Iphone XR
-                </p>
+                        <img class="image_product" src="{{$section->img_url}}">
+                        <h2>{{$section->title}}</h2>
+                        {{$section->description}}
 
-                <p class="about_us_product">
-                    7250 руб.
-                </p>
-            </div>
-            <a class="button_product" href="#">КУПИТЬ</a>
-        </div>
+                    </div>
+            @endforeach
 
-        <div class="productcard">
-            <img class="image_product" src="product7.png">
-            <div class="text_product">
-                <p class="text_product_setting">
-                    MSI GP65  (9th Gen Intel Core processor/ Geforce GTX 16 Series)
-                </p>
-                <p class="about_us_product">
-                    Графический процессор GeForce® GTX 1660 Ti
-                </p>
-            </div>
-            <a class="button_product" href="#">КУПИТЬ</a>
-        </div>
 
-        <div class="productcard">
-            <img class="image_product" src="product8.png">
-            <div class="text_product">
-                <p class="text_product_setting">
-                    GT75 Titan (9th Gen Intel Core processor/ Geforce RTX 20 series)
-                </p>
-
-                <p class="about_us_product">
-                    Видеокарта NVIDIA GeForce RTX™ 20-й серии
-                </p>
-            </div>
-            <a class="button_product" href="#">КУПИТЬ</a>
-        </div>
     </div>
 
 

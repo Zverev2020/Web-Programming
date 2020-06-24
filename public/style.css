@@ -31,7 +31,7 @@ body{
 
 .nav{
 	padding-top: 50px;
-	padding-left: 650px;
+	padding-left: 500px;
 }
 
 .nav_link{
@@ -241,12 +241,18 @@ li{
 }
 
 input[type="text"], input[type="password"]{
-	font-family: Segoe WP Light;
-	font-size: 16px;
-	width: 150px;
-	height: 20px;
-	margin-left: 15px;
+    font-family: Segoe WP Light;
+    font-size: 18px;
+
+
+
 }
+.formfind{
+    position: relative;
+    width: 1000px;
+    margin: 0 -500px;
+}
+
 
 .button_member{
 	font-family: Segoe WP Light;
@@ -281,12 +287,13 @@ input[type="text"], input[type="password"]{
 }
 
 input[type="email"]{
-	font-family: Segoe WP Light;
-	font-size: 16px;
-	width: 250px;
-	height: 20px;
-	margin-left: 15px;
+    font-family: Segoe WP Light;
+    font-size: 16px;
+    width: 237px;
+    height: 29px;
+    margin-left: 547px;
 }
+
 
 .button_subs{
 	font-family: Segoe WP Light;
@@ -412,7 +419,7 @@ form {
 .d1 button {
 	position: absolute;
 	top: 0;
-	right: 0px;
+	right: -587px;
 	width: 42px;
 	height: 42px;
 	border: none;
@@ -444,16 +451,17 @@ form {
 }
 
 .textbox{
-	background: #494949;
-	height:50px;
-	width:100%;
-	border-radius:3px;
-	border:rgba(0,0,0,.3) 2px solid;
-	box-sizing:border-box;
-	font-family: 'Open Sans', sans-serif;
-	font-size:18px;
-	padding:10px;
-	margin-bottom:30px;
+    background: #494949;
+    height: 60px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0,0,0,.3) 2px solid;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 12px;
+    margin-bottom: 13px;
+
 }
 .message:focus,
 .textbox:focus{
@@ -478,12 +486,12 @@ form {
 }
 
 .button{
-	height:50px;
-	width:100%;
-	border-radius:3px;
-	border:rgba(0,0,0,.3) 0px solid;
-	box-sizing:border-box;
-	padding:10px;
+    height: 33px;
+    width: 12%;
+    border-radius: 3px;
+    border: rgba(0,0,0,.3) 0px solid;
+    box-sizing: border-box;
+    padding: 3px;
 	background:#7BA7AB;
 	color:#FFF;
 	font-family: 'Open Sans', sans-serif;
@@ -491,6 +499,7 @@ form {
 	font-size: 16pt;
 	transition:background .4s;
 	cursor:pointer;
+    margin-left: 712px;
 }
 
 .button:hover{
@@ -509,7 +518,7 @@ form {
 
 .section_size{
 	width: 1150px;
-	height: 900px;
+	height: 1500px;
 	margin: 0 auto;
 }
 
@@ -588,3 +597,50 @@ text-transform: uppercase;
 	line-height: 40px;
 	background-color: #303030;
 }
+.auth{
+    float:right;
+    margin-top:46px;
+
+}
+.button2 {
+    height: 33px;
+    width: 50%;
+    border-radius: 3px;
+    border: rgba(0, 0, 0, .3) 0px solid;
+    box-sizing: border-box;
+    padding: 3px;
+    background: #7BA7AB;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    transition: background .4s;
+    cursor: pointer;
+    margin-left: 0px;
+}
+.textboxreg {
+    background: #494949;
+    height: 60px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0, 0, 0, .3) 2px solid;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 12px;
+    margin-bottom: 13px;
+    margin-right: 200px;
+}
+.textboxr {
+    background: #494949;
+    width: 237px;
+    height: 29px;
+    border-radius: 3px;
+    border: rgba(0, 0, 0, .3) 2px solid;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 12px;
+    margin-left: 547px;
+}
+

@@ -6,7 +6,7 @@
 <div class="border"></div>
 
     <div class="name_form">
-        <p class="feedback_name_form">Describe the reason</p>
+        <p class="feedback_name_form">Оставьте заявку</p>
     </div>
 
     <div class="feedback">
@@ -14,7 +14,7 @@
             <input name="name" placeholder="Укажите ваше имя!" class="textbox" required />
             <input name="mail" placeholder="Укажите ваш Email!" class="textbox" type="mail" required />
             <textarea rows="4" cols="50" name="subject" placeholder="Введите ваше сообщение:" class="message" required></textarea>
-            <input name="submit" class="button" type="submit" value="Отправить" />
+            <input name="submit" class="button2" type="submit" value="Отправить" />
         </form>
     </div>
 
