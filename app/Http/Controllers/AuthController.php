@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
     public function auth(Request $request)
     {
-        $user = User::where([['login', $request->login], ['password', ($request->password)]])->first();
+        $user = User::where([['login', $request->login], ['password', md5($request->password)]])->first();
     if (is_null($user)){
         return "Неверный логин или пароль";
     }
@@ -21,22 +21,16 @@ class AuthController extends Controller
         }
     public function registration(Request $request)
     {
-        $user = User::where('email_address', $request->email_address)->get();
-        if (!is_null($user)){
-            return "Пользователь с таким email уже существует";
-        }
         $user = User::create([
             'login' => $request->login,
-            'email_address'=> $request->email_address,
+            'email_address' => $request->email_address,
             'password' => md5($request->password),
             'status' => 1,
-
-        ]);
+    ]);
         if (is_null($user)){
             return "Ошибка";
-                    }
-        return "регистрация успешна";
-
+        }
+        return "Регистрация успешна";
     }
     public function logout()
     {
