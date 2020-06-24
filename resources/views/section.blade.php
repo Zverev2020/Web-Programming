@@ -7,18 +7,22 @@
 
     <div class="section_size">
 
+    @if (!is_null($error))
+        <div class="productcard">
+            <h2>Ничего не найдено</h2>
+        </div>
+        @else
 
+          @foreach($section as $section)
+            <div class="productcard">
 
-             @foreach($section as $section)
-                    <div class="productcard">
+                <img class="image_product" src="{{$section->img_url}}">
+                <h2>{{$section->title}}</h2>
+                {{$section->description}}
 
-                        <img class="image_product" src="{{$section->img_url}}">
-                        <h2>{{$section->title}}</h2>
-                        {{$section->description}}
-
-                    </div>
-            @endforeach
-
+            </div>
+        @endforeach
+     @endif
 
     </div>
 

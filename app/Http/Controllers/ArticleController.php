@@ -10,7 +10,8 @@ class ArticleController extends Controller
     {
     return Article::all();
     }
-    public function search($title){
+    public function search($title)
+    {
       $article = Article::where('title', 'like', '%'.$title.'%')->get();
       if (!count($article->toArray())){
           return null;
