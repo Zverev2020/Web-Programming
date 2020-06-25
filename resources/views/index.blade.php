@@ -34,18 +34,18 @@
             <img src="image_notebook_03.jpg">
 
             <div class="main_text_section2" >
-                <p id="text_section2">Service center of MasterKomp </p>
+                <p id="text_section2">Сервисный центр МастерКомп</p>
 
-                <p>The service center of MasterKomp company carries out laptop repair in service centers of the Irkutsk region in the cities of Irkutsk, Usolye-Sibirskoye, Angarsk. Our company accepts laptops for repair with any malfunctions that need to be repaired, such as: Replacing the laptop keyboard completely
-                    Keyboard repair and touchpad replacement
-                    Keyboard cleaning and fluid recovery
-                    Matrix replacement for models of different diagonals matte and glossy
-                    Power and charging system repair
-                    Repair and replacement of housing parts
-                    Cleaning and repairing the cooling fan
-                    Repair inverter and backlight
-                    Dust cleaning of all internal mechanisms
-                    Thermal Paste Replacement</p>
+                <p>Сервисный центр компании МастерКомп осуществляет ремонт ноутбуков в сервисных центрах Иркутской области в городах Иркутск, Усолье-Сибирское, Ангарск. Наша компания принимает ноутбуки в ремонт с любыми неисправностями, которые необходимо отремонтировать, такими как: полная замена клавиатуры ноутбука
+                    Ремонт клавиатуры и замена тачпада
+                    Очистка клавиатуры и её восстановление/замена
+                    Замена матрицы для моделей разных диагоналей матовых и глянцевых
+                    Ремонт системы питания
+                    Ремонт и замена деталей корпуса
+                    Чистка и ремонт охлаждающего вентилятора
+                    Ремонт экрана и подсветки
+                    Очистка от пыли всех внутренних механизмов
+                    Замена термопасты</p>
             </div>
         </div>
     </div>
